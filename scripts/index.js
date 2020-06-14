@@ -1,5 +1,5 @@
 function showAllPosts(){
-    window.location.replace("html/bloglist.html")
+    window.location.replace("html/postslist.html")
 }
 
 function showCreatePost() {
