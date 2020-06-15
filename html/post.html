@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Post</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/post.css">
 </head>
-<body>
+<body onload="updateData()">
+<div id="main-post-container">
+    <div id="header-div"></div>
+    <div id="body-container">
+        <div class="title"><h2 id="post-title"></h2></div>
+        <div class="author">
+            <b><span id="post-author"></span></b>
+            <div class="save-edit-button-holder">
+            <button id="edit-button" onclick="edit()">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button id="save-button" onclick="save()">Save <i class="fa fa-floppy-o" aria-hidden="true"></i> </button>
+            </div>
+        </div>
+        <div class="content" ><p id="post-content"></p></div>
+        <div class="like-button">
+            <button id="like-button" onclick="like()"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Likes</button>
+        </div>
+        <div class="like-button-update">
+            <p id="like-notes">Be the first one to like this!</p>
+        </div>
+        <div class="comment-box"><textarea  id="comment-textarea" placeholder="Leave a comment"></textarea></div>
+        <div class="comment-button">
+            <button onclick="addComment()">Comment</button>
+        </div>
+        <div class="all-comments">
+            <h4>All Comments</h4>
+        </div>
+        <div id="existing-comments">
+
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../scripts/common.js"></script>
+<script src="../scripts/post.js"></script>
 </body>
 </html>

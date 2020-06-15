@@ -1,16 +1,12 @@
-header{
+#header-div {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 8%;
+    height: auto;
 }
 
-#title-container{
-    position: static;
-    float: left;
+#title-container {
     height: 100%;
     width: 20%;
     display: flex;
@@ -20,10 +16,7 @@ header{
     width: 84%;
     height: 100%;
 }
-#header-button-container{
-    position: static;
-    float: left;
-    height: 100%;
+#header-button-container {
     width: 15%;
     display: flex;
     flex-direction: row;
@@ -41,22 +34,18 @@ header{
     background-color: blue;
 }
 
-.button-container{
-    position: relative;
-    left: 25px;
+.button-container {
+    /* position: relative; */
+    /* left: 25px; */
 }
 
-#title-h1{
-    position: relative;
-    top: -28%;
-    margin-left: 5px;
+#title-h1 {
     font-family: 'Montez', cursive;
     color: blue;
 }
-#title-p{
-    position: relative;
-    top: -60px;
-    left: 5px;
+#title-p {
+    position: absolute;
+    top: 50%;
     font-family: 'Ubuntu Mono', monospace;
     color: black;
     font-size: 14px;

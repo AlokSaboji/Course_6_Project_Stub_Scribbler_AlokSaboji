@@ -1,8 +1,11 @@
-// window.onclick = function(event) {
-//     if (event.target === document.getElementById("signup-modal")) {
-//         document.getElementById("signup-modal").style.display = "none";
-//     }
-// }
+$(document).ready(function () {
+        if (window.location.pathname.indexOf('index.html') > -1) {
+            $('#header-div').load("html/header.html");
+        } else{
+            $('#header-div').load("../html/header.html");
+        }
+});
+
 function showSignUpModal() {
         document.getElementById("signup-modal").style.display = "block";
 }
